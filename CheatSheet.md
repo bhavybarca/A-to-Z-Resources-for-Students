@@ -57,41 +57,42 @@ Placeholders        Format
 \0 - Null
 
 #5 PRECEDENCE ORDER
-| DESCRIPTION	          |         OPERATORS	                              | ASSOCIATIVITY	  |
-| ------------------------|:-------------------------------------------------:| -----------------:|
-| Function Expression	  |           ()	                              |   Left to Right   |
-| Array Expression	  |              []	                              |   Left to Right   |
-| Structure Operator	  |            ->	                              |   Left to Right   |
-| Structure Operator	  |            .                                      |	  Left to Right   |
-| Unary minus	          |            -                                      |	  Right to Left   |
-| Increment/Decrement	  |          ++, --	                              |   Right to Left   |
-| One’s compliment	  |              ~                                    |	  Right to Left   |
-| Negation	          |              !                                    |	  Right to Left   |
-| Address of              |        	&                                     |	  Right to Left   |
-| Value of address	  |             `*`	                              |   Right to Left   |
-| Type cast	          |            (type)	                              |   Right to Left   |
-| Size in bytes	          |        sizeof	                              |   Right to Left   |
-| Multiplication	  |                `*`	                              |   Left to Right   |
-| Division	          |               /	                              |   Left to Right   |
-| Modulus	          |                 %	                              |   Left to Right   |
-| Addition	          |               +	                              |   Left to Right   |
-| Subtraction	          |             -	                              |   Left to Right   |
-| Left shift	          |             <<		                      |   Left to Right   |
-| Right shift             |         	 >>	                              |   Left to Right   |
-| Less than	          |               <	                              |   Left to Right   |
-| Less than or equal to	  |           <=	                              |   Left to Right   |
-| Greater than	          |           >                                       |   Left to Right   |
-| Greater than or equal to|	         >=                                   |	  Left to Right   |
-| Equal to	          |              ==                                   |	  Left to Right   |
-| Not equal to	          |           !=                                      |   Left to Right   |
-| Bitwise AND	          |             &                                     |   Left to Right   |
-| Bitwise exclusive OR	  |           ^                                       |   Left to Right   |
-| Bitwise inclusive OR	  |             |                                     |   Left to Right   |
-| Logical AND	          |             &&                                    |   Left to Right   |
-| Logical OR	          |             ||	                              |   Left to Right   |
-| Conditional	          |             ?:	                              |   Right to Left   |
-| Assignment	          |   =, *=, /=, %=, +=, -=, &=, ^=, |=, <<=, >>=     |   Right to Left   |
-| Comma	                  |           ,	                                      |   Right to Left   |
+| DESCRIPTION	          |         OPERATORS	  | ASSOCIATIVITY     |
+| ------------------------|:---------------------:| -----------------:|
+| Function Expression	  |()	                  |   Left to Right   |
+| Array Expression	  |[]	                  |   Left to Right   |
+| Structure Operator	  |->	                  |   Left to Right   |
+| Structure Operator	  |.                      |   Left to Right   |
+| Unary minus	          |-                      |   Right to Left   |
+| Increment/Decrement	  |++, --	          |   Right to Left   |
+| One’s compliment	  |~                      |   Right to Left   |
+| Negation	          |!                      |   Right to Left   |
+| Address of              |&                      |   Right to Left   |
+| Value of address	  |`*`	                  |   Right to Left   |
+| Type cast	          |(type)	          |   Right to Left   |
+| Size in bytes	          |sizeof	          |   Right to Left   |
+| Multiplication	  |`*`	                  |   Left to Right   |
+| Division	          |/	                  |   Left to Right   |
+| Modulus	          |%	                  |   Left to Right   |
+| Addition	          |+	                  |   Left to Right   |
+| Subtraction	          |-	                  |   Left to Right   |
+| Left shift	          |<<		          |   Left to Right   |
+| Right shift             |>>	                  |   Left to Right   |
+| Less than	          |<	                  |   Left to Right   |
+| Less than or equal to	  |<=	                  |   Left to Right   |
+| Greater than	          |>                      |   Left to Right   |
+| Greater than or equal to|>=                     |   Left to Right   |
+| Equal to	          |==                     |   Left to Right   |
+| Not equal to	          |!=                     |   Left to Right   |
+| Bitwise AND	          |&                      |   Left to Right   |
+| Bitwise exclusive OR	  |^                      |   Left to Right   |
+| Bitwise inclusive OR	  | |                     |   Left to Right   |
+| Logical AND	          |&&                     |   Left to Right   |
+| Logical OR	          | ||	                  |   Left to Right   |
+| Conditional	          |?:	                  |   Right to Left   |
+| Assignment	          |=, *=, /=, %=, +=, -=, |   Right to Left   |
+| Assignment	          |&=, ^=, |=, <<=, >>=   |   Right to Left   |
+| Comma	                  |           ,	          |   Right to Left   |
 
 #6 IF-ELSE STATEMENT
 if(flag) {
@@ -144,7 +145,7 @@ do
 break statement is used to terminate the current loop the moves to the next line of the code.
 continue statement skips the current loop index and moves to the next iteration.
 
-# GOTO
+#12 GOTO
 syntax of goto is as follows:
 goto label;
 ..
@@ -176,7 +177,7 @@ value of a: 17
 value of a: 18
 value of a: 19
 
-#12 ARRAYS
+#13 ARRAYS
 1)Declaraction: 
 typeof_array array_name[size];
 eg:
@@ -188,7 +189,7 @@ int k=arr[2]; //k stores the element at index 2 of the array
 for(i =0;i<3;i++){
   scanf("%d", &arr[i]); // takes the values in the array arr by the user
 }
-#13 STRINGS
+#14 STRINGS
 1)Declaraction: 
 char string_name[size];
 scanf("%s",string_nam); 
